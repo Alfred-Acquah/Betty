@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * main - prints putchar followed by a new line
- * Return: Always 0 (Success)
+ * main - prints _putchar
+ * it is written by alfred
+ * Return: 0
  */
 
 int main(void)

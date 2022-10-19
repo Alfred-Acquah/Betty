@@ -1,12 +1,25 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-#include <stdio.h>
+/**
+ * largest_number - returns the largest of 3 numbers
+ * @n1: first number
+ * @n2: second number
+ * @n3: third number
+ * Return: largest number
+ */
+int largest_number(int n1, int n2, int n3)
+{
+	int largest;
 
-void positive_or_negative(int i);
-int largest_number(int a, int b, int c);
-void print_remaining_days(int month, int day, int year);
-int convert_day(int month, int day);
-void print_times_table(int n);
+	if (n1 > n2 && n1 > n3)
+		largest = n1;
+	else if (n2 > n1 && n2 > n3)
+		largest = n2;
+	else if (n3 > n2)
+		largest = n3;
 
-#endif /* MAIN_H */
+	else
+		largest  = n2;
+
+	return (largest);
+}

@@ -1,11 +1,26 @@
 #include "main.h"
-/**
- * reset_to_98 - takes the pointer and updates the value
- * @n: int to check
- * Return: 0 is success
- */
 
-void reset_to_98(int *n)
+/**
+ * _strcat - concat 2 string
+ * @dest:char
+ * @src:char
+ * Return:char
+ */
+char *_strcat(char *dest, char *src)
 {
-	*n = 98;
+	char *s = dest;
+
+	while (*dest != '\0')
+	{
+		dest++;
+	}
+
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+	return (s);
 }

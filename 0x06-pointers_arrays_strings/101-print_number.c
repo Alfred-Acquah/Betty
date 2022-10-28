@@ -7,7 +7,7 @@ void print_uint(unsigned int n);
  * @n: The integer to print
  */
 
-void print_number(int n)
+void print_number(int n);
 {
 	if (n < 0)
 	{

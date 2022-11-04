@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 		if (*flag)
 		{
 			printf("Error\n")
-				return (1);
+			return (1);
 		}
 		else
 		{

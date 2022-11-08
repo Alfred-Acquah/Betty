@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * argstostr - concatenates all the arguments of a program.
+ *  * argstostr - concatenates all the arguments of a program.
  * @ac: argument count.
  * @av: argument vector.
  *
@@ -47,7 +47,7 @@ char *argstostr(int ac, char **av)
 		if (ia < c - 1)
 			aout[ia] = av[i][j];
 	}
-	aout[ia] = av[i][j];
+	aout[ia] = '\0';
 
 	return (aout);
 }
